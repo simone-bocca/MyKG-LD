@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.10 (3122878 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+  <node id="361378958" visible="true" version="3" changeset="4272284" timestamp="2010-03-29T22:38:40Z" user="user_136835" uid="136835" lat="46.0613247" lon="11.1502816">
+  <tag k="amenity" v="drinking_water"/>
+ </node>
+ </osm>

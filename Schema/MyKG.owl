@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/simone/ontologies/2021/10/untitled-ontology-34#"
+     xml:base="http://www.semanticweb.org/simone/ontologies/2021/10/untitled-ontology-34"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/simone/ontologies/2021/10/untitled-ontology-34"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_doctor -->
+
+    <owl:ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_doctor">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Patient"/>
+        <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Doctor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_hospital -->
+
+    <owl:ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_hospital">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Doctor"/>
+        <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Hospital"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_node -->
+
+    <owl:ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_node">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#way"/>
+        <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#node"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_way -->
+
+    <owl:ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_way">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Building"/>
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#parking"/>
+        <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#way"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#capacity">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#parking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#capacity_disabled -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#capacity_disabled">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#parking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_building_address -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_building_address">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_building_id -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_building_id">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_patient_address -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_patient_address">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_patient_dateOfBirth -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_patient_dateOfBirth">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_person_identifier -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_person_identifier">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_person_name -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_person_name">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_person_surname -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_person_surname">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#latitude">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#drinking_water"/>
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#node"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#longitude">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#drinking_water"/>
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#node"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Building -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Building"/>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Doctor -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Doctor">
+        <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Hospital -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Hospital">
+        <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Patient -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Patient">
+        <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Person -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Person"/>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#drinking_water -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#drinking_water"/>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#node -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#node"/>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#parking -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#parking"/>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#way -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#way"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

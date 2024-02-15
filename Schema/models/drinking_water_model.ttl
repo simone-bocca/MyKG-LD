@@ -1,0 +1,487 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix etype: <http://knowdive.disi.unitn.it/etype#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1hmmahm93x1 a km-dev:R2RMLMapping ;
+    km-dev:sourceName "drinking_water.xml" ;
+    km-dev:modelPublicationTime "1707998763299"^^xsd:long ;
+    km-dev:modelVersion "1.7" ;
+    km-dev:hasInputColumns "[[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"lon\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"id\"}]]" ;
+    km-dev:hasOutputColumns "[[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"lon\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"id\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"drinking_water_EType-ID\"}]]" ;
+    km-dev:hasModelLabel "drinking_water.xml" ;
+    km-dev:hasBaseURI "http://localhost:8080/source/" ;
+    km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"node\"},
+                    {\"columnName\": \"id\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"drinking_water_EType-ID\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"LDIP2\\\"\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"drinking_water_EType-ID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"node\"},
+                    {\"columnName\": \"drinking_water_EType-ID\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://knowdive.disi.unitn.it/etype#drinking_water\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://knowdive.disi.unitn.it/etype#drinking_water1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#drinking_water\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#drinking_water1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"etype:drinking_water1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"drinking_water_EType-ID\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"drinking_water_EType-ID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"node\"},
+                    {\"columnName\": \"id\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://knowdive.disi.unitn.it/etype#node\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://knowdive.disi.unitn.it/etype#node1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#node\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#node1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"etype:node1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"node\"},
+                    {\"columnName\": \"lat\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#node\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#node1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#latitude\",
+                    \"DomainLabel\": \"etype:node1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"node\"},
+                    {\"columnName\": \"lon\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#node\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#node1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#longitude\",
+                    \"DomainLabel\": \"etype:node1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"lon\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"lon\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://knowdive.disi.unitn.it/etype#node1\",
+                    \"edgeId\": \"http://knowdive.disi.unitn.it/etype#has_node\",
+                    \"edgeTargetUri\": \"http://knowdive.disi.unitn.it/etype#node\",
+                    \"edgeSourceId\": \"http://knowdive.disi.unitn.it/etype#drinking_water1\",
+                    \"edgeSourceUri\": \"http://knowdive.disi.unitn.it/etype#drinking_water\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_99075cb1-afed-402d-adaa-913b155b2eb6 a rr:TriplesMap .
+
+_:node1hmmahm93x1 km-dev:hasTriplesMap km-dev:TriplesMap_99075cb1-afed-402d-adaa-913b155b2eb6 .
+
+km-dev:TriplesMap_99075cb1-afed-402d-adaa-913b155b2eb6 km-dev:isPartOfMapping _:node1hmmahm93x1 .
+
+_:node1hmmahm93x2 rr:tableName "drinking_water.xml" ;
+    a rr:LogicalTable ;
+    km-dev:isPartOfMapping _:node1hmmahm93x1 .
+
+_:node1hmmahm93x1 km-dev:hasLogicalTable _:node1hmmahm93x2 .
+
+km-dev:TriplesMap_99075cb1-afed-402d-adaa-913b155b2eb6 rr:logicalTable _:node1hmmahm93x2 ;
+    rr:subjectMap _:node1hmmahm93x3 .
+
+_:node1hmmahm93x1 km-dev:hasSubjectMap _:node1hmmahm93x3 .
+
+_:node1hmmahm93x3 km-dev:isPartOfMapping _:node1hmmahm93x1 ;
+    a rr:SubjectMap ;
+    km-dev:alignmentNodeId "http://knowdive.disi.unitn.it/etype#drinking_water1" ;
+    rr:class etype:drinking_water ;
+    rr:template "LDIP2" ;
+    a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_d937ef9f-1dec-4c2e-a3ee-f6f4c2f0960b rr:predicate etype:has_node .
+
+km-dev:RefObjectMap_35bc6257-419a-41f2-af47-8e1260fa049d a rr:RefObjectMap , rr:ObjectMap ;
+    rr:parentTriplesMap km-dev:TriplesMap_7ee04856-faeb-4e87-8c29-c4b63bb820f4 ;
+    km-dev:isPartOfMapping _:node1hmmahm93x1 .
+
+_:node1hmmahm93x1 km-dev:hasObjectMap km-dev:RefObjectMap_35bc6257-419a-41f2-af47-8e1260fa049d .
+
+km-dev:PredicateObjectMap_d937ef9f-1dec-4c2e-a3ee-f6f4c2f0960b rr:objectMap km-dev:RefObjectMap_35bc6257-419a-41f2-af47-8e1260fa049d .
+
+km-dev:TriplesMap_99075cb1-afed-402d-adaa-913b155b2eb6 rr:predicateObjectMap km-dev:PredicateObjectMap_d937ef9f-1dec-4c2e-a3ee-f6f4c2f0960b .
+
+km-dev:PredicateObjectMap_d937ef9f-1dec-4c2e-a3ee-f6f4c2f0960b a rr:PredicateObjectMap ;
+    km-dev:isPartOfMapping _:node1hmmahm93x1 .
+
+_:node1hmmahm93x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d937ef9f-1dec-4c2e-a3ee-f6f4c2f0960b .
+
+km-dev:TriplesMap_7ee04856-faeb-4e87-8c29-c4b63bb820f4 a rr:TriplesMap .
+
+_:node1hmmahm93x1 km-dev:hasTriplesMap km-dev:TriplesMap_7ee04856-faeb-4e87-8c29-c4b63bb820f4 .
+
+km-dev:TriplesMap_7ee04856-faeb-4e87-8c29-c4b63bb820f4 km-dev:isPartOfMapping _:node1hmmahm93x1 .
+
+_:node1hmmahm93x4 rr:tableName "drinking_water.xml" ;
+    a rr:LogicalTable ;
+    km-dev:isPartOfMapping _:node1hmmahm93x1 .
+
+_:node1hmmahm93x1 km-dev:hasLogicalTable _:node1hmmahm93x4 .
+
+km-dev:TriplesMap_7ee04856-faeb-4e87-8c29-c4b63bb820f4 rr:logicalTable _:node1hmmahm93x4 ;
+    rr:subjectMap _:node1hmmahm93x5 .
+
+_:node1hmmahm93x1 km-dev:hasSubjectMap _:node1hmmahm93x5 .
+
+_:node1hmmahm93x5 km-dev:isPartOfMapping _:node1hmmahm93x1 ;
+    a rr:SubjectMap ;
+    km-dev:alignmentNodeId "http://knowdive.disi.unitn.it/etype#node1" ;
+    rr:class etype:node ;
+    rr:template "{[\"osm\",\"node\",\"id\"]}" .
+
+km-dev:PredicateObjectMap_c785ca50-48af-465a-b7b0-318140e77f8b rr:predicate etype:latitude .
+
+_:node1hmmahm93x6 rr:column "[\"osm\",\"node\",\"lat\"]" ;
+    a rr:ObjectMap ;
+    km-dev:isPartOfMapping _:node1hmmahm93x1 .
+
+_:node1hmmahm93x1 km-dev:hasObjectMap _:node1hmmahm93x6 .
+
+km-dev:PredicateObjectMap_c785ca50-48af-465a-b7b0-318140e77f8b rr:objectMap _:node1hmmahm93x6 .
+
+km-dev:TriplesMap_7ee04856-faeb-4e87-8c29-c4b63bb820f4 rr:predicateObjectMap km-dev:PredicateObjectMap_c785ca50-48af-465a-b7b0-318140e77f8b .
+
+km-dev:PredicateObjectMap_c785ca50-48af-465a-b7b0-318140e77f8b a rr:PredicateObjectMap ;
+    km-dev:isPartOfMapping _:node1hmmahm93x1 .
+
+_:node1hmmahm93x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c785ca50-48af-465a-b7b0-318140e77f8b .
+
+km-dev:PredicateObjectMap_8a4bf9e0-75ed-45df-b116-a4fa1202dc0c rr:predicate etype:longitude .
+
+_:node1hmmahm93x7 rr:column "[\"osm\",\"node\",\"lon\"]" ;
+    a rr:ObjectMap ;
+    km-dev:isPartOfMapping _:node1hmmahm93x1 .
+
+_:node1hmmahm93x1 km-dev:hasObjectMap _:node1hmmahm93x7 .
+
+km-dev:PredicateObjectMap_8a4bf9e0-75ed-45df-b116-a4fa1202dc0c rr:objectMap _:node1hmmahm93x7 .
+
+km-dev:TriplesMap_7ee04856-faeb-4e87-8c29-c4b63bb820f4 rr:predicateObjectMap km-dev:PredicateObjectMap_8a4bf9e0-75ed-45df-b116-a4fa1202dc0c .
+
+km-dev:PredicateObjectMap_8a4bf9e0-75ed-45df-b116-a4fa1202dc0c a rr:PredicateObjectMap ;
+    km-dev:isPartOfMapping _:node1hmmahm93x1 .
+
+_:node1hmmahm93x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8a4bf9e0-75ed-45df-b116-a4fa1202dc0c .

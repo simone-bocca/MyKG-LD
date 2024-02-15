@@ -1,0 +1,5 @@
+<http://localhost:8080/source/361378958> <http://knowdive.disi.unitn.it/etype#latitude> "46.0613247" .
+<http://localhost:8080/source/361378958> <http://knowdive.disi.unitn.it/etype#longitude> "11.1502816" .
+<http://localhost:8080/source/361378958> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#node> .
+<http://localhost:8080/source/LDIP2> <http://knowdive.disi.unitn.it/etype#has_node> <http://localhost:8080/source/361378958> .
+<http://localhost:8080/source/LDIP2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#drinking_water> .

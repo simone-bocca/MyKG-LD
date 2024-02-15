@@ -1,0 +1,109 @@
+{
+    "way": {
+        "-id": "53571191",
+        "-visible": "true",
+        "-version": "4",
+        "-changeset": "140058622",
+        "-timestamp": "2023-08-18T13:34:30Z",
+        "-user": "paganella31",
+        "-uid": "3277757",
+        "node1":
+            {
+                "-id": "676763399",
+                "-visible": "true",
+                "-version": "3",
+                "-changeset": "35121887",
+                "-timestamp": "2015-11-06T09:47:40Z",
+                "-user": "napo",
+                "-uid": "20610",
+                "-lat": "46.0612038",
+                "-lon": "11.1500195"
+            },
+        "node2":
+            {
+                "-id": "676763400",
+                "-visible": "true",
+                "-version": "3",
+                "-changeset": "35121887",
+                "-timestamp": "2015-11-06T09:47:40Z",
+                "-user": "napo",
+                "-uid": "20610",
+                "-lat": "46.0609397",
+                "-lon": "11.1502661"
+            },
+        "node3":
+            {
+                "-id": "3820441053",
+                "-visible": "true",
+                "-version": "1",
+                "-changeset": "35121887",
+                "-timestamp": "2015-11-06T09:47:33Z",
+                "-user": "napo",
+                "-uid": "20610",
+                "-lat": "46.0609769",
+                "-lon": "11.1503300"
+            },
+        "node4":
+            {
+                "-id": "3820441054",
+                "-visible": "true",
+                "-version": "1",
+                "-changeset": "35121887",
+                "-timestamp": "2015-11-06T09:47:34Z",
+                "-user": "napo",
+                "-uid": "20610",
+                "-lat": "46.0610184",
+                "-lon": "11.1503715"
+            },
+        "node5":
+            {
+                "-id": "676763409",
+                "-visible": "true",
+                "-version": "3",
+                "-changeset": "35121887",
+                "-timestamp": "2015-11-06T09:47:40Z",
+                "-user": "napo",
+                "-uid": "20610",
+                "-lat": "46.0611162",
+                "-lon": "11.1503725"
+            },
+        "node6":
+            {
+                "-id": "3820441055",
+                "-visible": "true",
+                "-version": "1",
+                "-changeset": "35121887",
+                "-timestamp": "2015-11-06T09:47:34Z",
+                "-user": "napo",
+                "-uid": "20610",
+                "-lat": "46.0612102",
+                "-lon": "11.1502548"
+            },
+        "node7":
+            {
+                "-id": "676763401",
+                "-visible": "true",
+                "-version": "3",
+                "-changeset": "35121887",
+                "-timestamp": "2015-11-06T09:47:40Z",
+                "-user": "napo",
+                "-uid": "20610",
+                "-lat": "46.0612559",
+                "-lon": "11.1501260"
+            },
+        "node8":
+            {
+                "-id": "676763399",
+                "-visible": "true",
+                "-version": "3",
+                "-changeset": "35121887",
+                "-timestamp": "2015-11-06T09:47:40Z",
+                "-user": "napo",
+                "-uid": "20610",
+                "-lat": "46.0612038",
+                "-lon": "11.1500195"
+            },
+        "capacity": "19",
+        "capacity-disabled": "yes"
+    }
+}

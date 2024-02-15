@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.10 (3122878 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+
+<node id="361378958" visible="true" version="3" changeset="4272284" timestamp="2010-03-29T22:38:40Z" user="user_136835" uid="136835" lat="46.0613247" lon="11.1502816">
+  <tag k="amenity" v="drinking_water"/>
+ </node>
+<way id="53571191" visible="true" version="4" changeset="140058622" timestamp="2023-08-18T13:34:30Z" user="paganella31" uid="3277757">
+  <node id="676763399" visible="true" version="3" changeset="35121887" timestamp="2015-11-06T09:47:40Z" user="napo" uid="20610" lat="46.0612038" lon="11.1500195"/>
+  <node id="676763400" visible="true" version="3" changeset="35121887" timestamp="2015-11-06T09:47:40Z" user="napo" uid="20610" lat="46.0609397" lon="11.1502661"/>
+  <node id="3820441053" visible="true" version="1" changeset="35121887" timestamp="2015-11-06T09:47:33Z" user="napo" uid="20610" lat="46.0609769" lon="11.1503300"/>
+  <node id="3820441054" visible="true" version="1" changeset="35121887" timestamp="2015-11-06T09:47:34Z" user="napo" uid="20610" lat="46.0610184" lon="11.1503715"/>
+  <node id="676763409" visible="true" version="3" changeset="35121887" timestamp="2015-11-06T09:47:40Z" user="napo" uid="20610" lat="46.0611162" lon="11.1503725"/>
+  <node id="3820441055" visible="true" version="1" changeset="35121887" timestamp="2015-11-06T09:47:34Z" user="napo" uid="20610" lat="46.0612102" lon="11.1502548"/>
+  <node id="676763401" visible="true" version="3" changeset="35121887" timestamp="2015-11-06T09:47:40Z" user="napo" uid="20610" lat="46.0612559" lon="11.1501260"/>
+  <node id="676763399" visible="true" version="3" changeset="35121887" timestamp="2015-11-06T09:47:40Z" user="napo" uid="20610" lat="46.0612038" lon="11.1500195"/>
+  <tag-amenity v="parking"/>
+  <tag-capacity v="19"/>
+  <tag-capacity-disabled v="yes"/>
+  <tag-parking v="surface"/>
+ </way>
+ <way id="53571192" visible="true" version="2" changeset="35121887" timestamp="2015-11-06T09:47:35Z" user="napo" uid="20610">
+  <nd ref="676763404"/>
+  <nd ref="676763411"/>
+  <nd ref="676763412"/>
+  <nd ref="676763407"/>
+  <nd ref="676763402"/>
+  <nd ref="676763406"/>
+  <nd ref="676763404"/>
+  <tag k="landuse" v="recreation_ground"/>
+  <tag k="leisure" v="park"/>
+  <tag k="name" v="Parco di Graffiano"/>
+ </way>
+<way id="189295430" visible="true" version="3" changeset="146369446" timestamp="2024-01-17T15:14:05Z" user="Simone Bocca" uid="20910262">
+  <nd ref="1999373730"/>
+  <nd ref="1999373719"/>
+  <nd ref="1999373714"/>
+  <nd ref="1999373711"/>
+  <nd ref="1999373717"/>
+  <nd ref="1999373716"/>
+  <nd ref="1999373726"/>
+  <nd ref="1999373724"/>
+  <nd ref="1999373729"/>
+  <nd ref="9632226870"/>
+  <nd ref="1999373733"/>
+  <nd ref="1999373731"/>
+  <nd ref="1999373730"/>
+  <tag k="addr:city" v="Povo"/>
+  <tag k="addr:housenumber" v="30"/>
+  <tag k="addr:postcode" v="38123"/>
+  <tag k="addr:street" v="Via Graffiano"/>
+  <tag k="building" v="yes"/>
+  <tag k="building:levels" v="3"/>
+ </way>
+</osm>
