@@ -63,6 +63,7 @@
     <!-- http://knowdive.disi.unitn.it/etype#has_way -->
 
     <owl:ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_way">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#park"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#parking"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#way"/>
     </owl:ObjectProperty>
@@ -77,6 +78,60 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#addr-city -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#addr-city">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#house"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#addr-housenumber -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#addr-housenumber">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#house"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#addr-postcode -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#addr-postcode">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#house"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#addr-street -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#addr-street">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#house"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#building -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#building">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#house"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#building-levels -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#building-levels">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#house"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -154,6 +209,15 @@
     
 
 
+    <!-- http://knowdive.disi.unitn.it/etype#landuse -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#landuse">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#park"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://knowdive.disi.unitn.it/etype#latitude -->
 
     <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#latitude">
@@ -164,11 +228,29 @@
     
 
 
+    <!-- http://knowdive.disi.unitn.it/etype#leisure -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#leisure">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#park"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://knowdive.disi.unitn.it/etype#longitude -->
 
     <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#longitude">
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#drinking_water"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#node"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#name -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#name">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#park"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -191,15 +273,21 @@
     
 
 
-    <!-- http://knowdive.disi.unitn.it/etype#hause -->
+    <!-- http://knowdive.disi.unitn.it/etype#house -->
 
-    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#hause"/>
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#house"/>
     
 
 
     <!-- http://knowdive.disi.unitn.it/etype#node -->
 
     <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#node"/>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#park -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#park"/>
     
 
 
